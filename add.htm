@@ -1,37 +1,185 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add Post</title>
-            <!--Link to CSS-->
-        <link rel="stylesheet" href="/css/style.css">
-    <!-- Include stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="add-post">
-            <h1>Add Post</h1>
-            <form action="add.htm" method="post" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="Title" id="" required />
-            <input type="text" name="category" placeholder="Category" id="" />
-            <div id="editor-container" style="height: 200px;"></div>
-            <input type="hidden" name="content" id="content" />
-            <input type="file" name="image" accept="image/*" id="" />
-            <button type="submit">Add Post</button>
-        </form>
-        <a href="/">Back to Home</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project चिंता.</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!--Box Icons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="nav container">
+            <!--Logo-->
+            <!--<a href="index.htm" class="logo">चिं<span>ता</span></a>-->
+            <a href="index.htm" class="user">
+                <img src="/images/logo.png" alt="user" id="user-img">
+            </a>
+            <!--Nav Right-->
+        </div> 
+    </header>
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2 class="title">Project <span>चिंता</span></h2>
+            <!--Search Box-->
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input type="search" name="" id="" placeholder="Search" />
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
-        <script>
-            var quill = new Quill('#editor-container', {
-                theme: 'snow',
-            })
-            var form = document.querySelector('form');
-            form.onsubmit = function() {
-                var content = document.querySelector('input[name=content]');
-                content.value = quill.root.innerHTML;
-            };
-        </script>
-    </body> 
+    </section>
+    <!--Post Filter-->
+    
+
+    <!--Post Section-->
+    <section class="post container" id="posts">
+        <!--Posts will be shown here-->
+        <div class="post-box">
+            <img src="/images/image12.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a class="post-title">What is Project Chinta?</a></h1>
+               <div class="author-name"><i class='bx bx-pen' >Xaireeka Rai</i></div> 
+            </div>
+            <p class="preview-text">
+                In the heart of the Eastern Himalayas lies a rich cultural heritage that has endured for centuries.
+                The rituals and spiritual practices of the indigenous Kirat community, including the Rai peopple, are deeply
+                intertwined with nature
+            </p>
+            <a href="page-3.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 23 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image7.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a class="post-title">Echoes Beyond Life</a></h1>
+                <div class="author-name"><i class='bx bx-pen' >Saurav Rai</i></div>
+            </div>
+            <p class="preview-text">
+                The Enigmatic Death Rites of the Khambu RaiThe Chinta
+ritual is a mesmerizing and mystical ceremony deeply
+woven into the cultural tapestry of the Khambu Rai
+community. This sacred rite serves as a powerful bridge
+between the world of the living and the realm of the
+ancestors, 
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 26 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image10.png" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a class="post-title">The Indigenous People of Darjeeling: Kirat Khambu</a></h1>
+                <div class="author-name"><i class='bx bx-pen'>Priyasha Lama</i></div>
+            </div>
+            <p class="preview-text">
+                The Darjeeling Hills, nestled in the Indo-Himalayan region, embody a fascinating blend of geographical,
+historical, and cultural influences. This region, positioned at the border of India and Nepal in the upper
+reaches of northeastern West Bengal, is home to a diverse mix of communities. 
+                
+            </p>
+            <a href="page-2.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Mar 03 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image3.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a href="image3.jpg" class="post-title"></a>Post 1</h1>
+                <i class='bx bx-pen' >Priyasha Lama</i>
+            </div>
+            <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, 
+                a perferendis veniam nihil laudantium iusto! Alias quas asperiores 
+                
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 22 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image3.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a href="image3.jpg" class="post-title"></a>Post 1</h1>
+                <i class='bx bx-pen' >Priyasha Lama</i>
+            </div>
+            <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, 
+                a perferendis veniam nihil laudantium iusto! Alias quas asperiores 
+                
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 22 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image3.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a href="image3.jpg" class="post-title"></a>Post 1</h1>
+                <i class='bx bx-pen' >Priyasha Lama</i>
+            </div>
+            <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, 
+                a perferendis veniam nihil laudantium iusto! Alias quas asperiores 
+                
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 22 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image3.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a href="image3.jpg" class="post-title"></a>Post 1</h1>
+                <i class='bx bx-pen' >Priyasha Lama</i>
+            </div>
+            <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, 
+                a perferendis veniam nihil laudantium iusto! Alias quas asperiores 
+                
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 22 2025</i>
+        </div>
+        <div class="post-box">
+            <img src="/images/image3.jpg" alt="" class="post-img">
+            <div class="post-preview">
+                <h1><a href="image3.jpg" class="post-title"></a>Post 1</h1>
+                <i class='bx bx-pen' >Priyasha Lama</i>
+            </div>
+            <p class="preview-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, 
+                a perferendis veniam nihil laudantium iusto! Alias quas asperiores 
+                
+            </p>
+            <a href="page-1.htm" class="btn">Read More</a>
+            <i class='bx bx-calendar'>Feb 22 2025</i>
+        </div>
+        
+    </section>
+    <!--Footer-->
+    <div class="footer container">
+        <p>&#169; projectchinta</p>
+        <p class="mail"><i class='bx bx-envelope'></i>projectchinta1@gmail.com</p>
+        <div class="social">
+            <a href="https://www.instagram.com/projectchinta/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/people/Chinta-A/61573320968253/?rdid=FNF0xtFaE3asZVVT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AS343mWWL%2F"><i class='bx bxl-facebook'></i></a>
+            
+            <a href="https://www.youtube.com/@ProjectChinta"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </div>
+    <!--Link to JS-->
+    <script src="/public/js/main.js"></script>
+    <script src="swiper.min.js"></script>
+    <script>
+       window.addEventListener("scroll", function () {
+    let userImg = document.getElementById("user-img");
+    if (window.scrollY > 50) { // Adjust value as needed
+        userImg.style.opacity = "0";
+        userImg.style.transition = "opacity 0.3s ease-in-out";
+    } else {
+        userImg.style.opacity = "1";
+    }
+});
+
+    </script>
+</body>
 </html>
