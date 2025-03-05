@@ -403,6 +403,9 @@ header.shadow .admin-btn .bx{
     .post-content{
         margin-top: 5rem !important;
     }
+    .header-img{
+        width: 100%;
+    }
 }
 @media (max-width: 1060px){
     .container{
