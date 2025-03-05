@@ -404,8 +404,8 @@ header.shadow .admin-btn .bx{
         margin-top: 5rem !important;
     }
    .header-img{
-        width: auto;
-        height: auto;
+         width: 1080px;
+        height: 2400px;
     }
 }
 @media (max-width: 1060px){
