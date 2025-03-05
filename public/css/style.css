@@ -517,7 +517,7 @@ header.shadow .admin-btn .bx{
         font-size: 1.2rem;
         padding: 10px;
     }
-    #post-image{
+    #post-image, .header-img{
         height: auto;
         max-width: 100%;
     }
