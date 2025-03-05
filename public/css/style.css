@@ -392,6 +392,18 @@ header.shadow .admin-btn .bx{
     margin-top: 1rem;
 }
 /*Responsive*/
+@media (max-width: 1080px){
+    .container{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .home-content h2{
+        font-size: 3rem;
+    }
+    .post-content{
+        margin-top: 5rem !important;
+    }
+}
 @media (max-width: 1060px){
     .container{
         margin: 0 auto;
