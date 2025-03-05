@@ -189,6 +189,7 @@ header.shadow .admin-btn .bx{
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+    margin-top: auto;
 }
 .footer p{
     font-size: 0.938rem;
@@ -435,7 +436,7 @@ header.shadow .admin-btn .bx{
         font-weight: 500;
     }
     #post-image{
-        height: 380px;
+        height: 300px;
     }
     .post-header{
         height: 405px;
@@ -447,6 +448,10 @@ header.shadow .admin-btn .bx{
     .admin-panel h1{
         font-size: 1.6rem;
     }
+    .post-text{
+        font-size: 14px;
+    }
+
 }
 @media (max-width: 570px){
     tr{
@@ -480,19 +485,38 @@ header.shadow .admin-btn .bx{
         padding-top: 4rem !important;
     }
     .post{
-        padding: 10px;
+        padding: 20px;
+    }
+    .post-text{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
     }
     .header-title{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 10px;
     }
     #post-image{
-        height: 240px;
+        height: auto;
+        max-width: 100%;
     }
     .post-header{
-        height: 335px;
+        height: auto;
+        padding: 1rem 0;
     }
     .post-content{
         margin-top: 7rem !important;
+        padding: 1rem;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        padding: 15px;
+    }
+}
+@media (max-width: 320px){
+    header-image{
+        height: 180px;
     }
 }
 /*Posts*/
