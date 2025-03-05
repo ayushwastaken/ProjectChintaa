@@ -405,6 +405,7 @@ header.shadow .admin-btn .bx{
     }
     .header-img{
         width: 100%;
+        height: 200px;
     }
 }
 @media (max-width: 1060px){
